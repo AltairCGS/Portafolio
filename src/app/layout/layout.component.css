@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header, main {
+  max-width: 1280px;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  margin-right: 15px;
+}
