@@ -6,6 +6,8 @@ import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
 import { LayoutComponent } from './layout/layout.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProfileComponent } from './profile/profile.component';
+import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
   {
@@ -29,6 +31,11 @@ const routes: Routes = [
         component: ContactComponent,
       },
       {
+        path: 'profile',
+        component: ProfileComponent,
+        canActivate: [AuthGuard],
+      },
+      {
         path: '',
         redirectTo: '/home',
         pathMatch: 'full',
@@ -47,7 +54,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { enableTracing: true })],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

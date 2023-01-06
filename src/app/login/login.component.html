@@ -1,5 +1,6 @@
+<p *ngIf="loginError" class="error-message">usuario o contraseña incorrecto</p>
 <label for="username">Username</label>
-<input type="text" name="username" />
+<input type="text" name="username" [(ngModel)]="username" />
 <label for="password">Password</label>
-<input type="text" name="password" />
-<button>Log in</button>
+<input type="password" name="password" [(ngModel)]="password" />
+<button (click)="login()">Log in</button>
