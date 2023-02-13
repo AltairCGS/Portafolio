@@ -1,1 +1,34 @@
-<h1>HOME PAGE</h1>
+<!-- <h1>HOME PAGE</h1> -->
+<div class="container">
+  <div class="content-iz">
+    <div class="presentacion">
+      <h1>¡Hola! Soy Jhan Galvis</h1>
+      <h2>Web Developer</h2>
+    </div>
+  </div>
+  <div class="content-de">
+    <img src="https://media.licdn.com/dms/image/C4E03AQH-mkoXjbOGTw/profile-displayphoto-shrink_800_800/0/1668048428523?e=1681948800&v=beta&t=9i2MkGhELYszygEPXSU53b0LLqQ1hJP-G-9c8QiHYIo" alt="Jhan">
+  </div>
+</div>
+<div class="redes">
+  <a href="https://github.com/AltairCGS" target="_blank" style="margin-right: 1rem;"><button> Sigueme <i class="fa-brands fa-github"></i></button></a>
+  <a href="https://www.linkedin.com/in/jhangalvis/" target="_blank" class="button2"><button> Sigueme <i class="fa-brands fa-linkedin"></i></button></a>
+</div>
+<div class="scrolldown" style="--color: #2ec02e; margin: 1rem auto auto auto;">
+  <div class="chevrons">
+      <div class="chevrondown"></div>
+      <div class="chevrondown"></div>
+  </div>
+</div>
+<div class="about">
+  <app-profile></app-profile>
+</div>
+<div class="habilidades">
+  <app-habilidades></app-habilidades>
+</div>
+<div class="proyectos" [attr.id]="'proyectos'">
+  <app-proyectos></app-proyectos>
+</div>
+<div id="footer">
+  <app-footer></app-footer>
+</div>

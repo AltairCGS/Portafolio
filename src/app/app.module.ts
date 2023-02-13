@@ -7,10 +7,13 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { LoginComponent } from './login/login.component';
 import { LayoutComponent } from './layout/layout.component';
 import { HomeComponent } from './home/home.component';
-import { BlogComponent } from './blog/blog.component';
-import { ContactComponent } from './contact/contact.component';
+
+
 import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
+import { ProyectosComponent } from './proyectos/proyectos.component';
+import { HabilidadesComponent } from './habilidades/habilidades.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -19,9 +22,10 @@ import { ProfileComponent } from './profile/profile.component';
     LoginComponent,
     LayoutComponent,
     HomeComponent,
-    BlogComponent,
-    ContactComponent,
     ProfileComponent,
+    ProyectosComponent,
+    HabilidadesComponent,
+    FooterComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],

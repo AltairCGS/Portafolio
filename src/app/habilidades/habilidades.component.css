@@ -1,0 +1,47 @@
+.habilidades-container{
+  max-width: 1280px;
+  margin: auto;
+
+}
+
+.conocimiento{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 3rem;
+}
+
+.frontend{
+  width: 50%;
+  background-color: white;
+  color: black;
+  height: fit-content;
+  border-radius: 1rem;
+  box-shadow: 0 25px 30px -12px rgba(0, 0, 0, 0.692);
+}
+
+.backend{
+  width: 50%;
+  background-color: white;
+  color: black;
+  border-radius: 1rem;
+  box-shadow: 0 25px 30px -12px rgba(0, 0, 0, 0.692);
+
+}
+
+.iconos img{
+  width: 70px;
+  height: 70px;
+  transition: transform 0.3s;
+}
+
+.iconos img:hover {
+  transform: scale(1.2);
+}
+
+.iconos{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
